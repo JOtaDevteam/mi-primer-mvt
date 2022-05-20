@@ -31,9 +31,9 @@
                 <th scope="col">Identificador</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Apellido</th>
-                <th scope="col">Email</th>
+                <th scope="col">Parentesco</th>
                 <th scope="col">Fecha Nacimiento</th>
-                <th scope="col">Altura</th>
+                <th scope="col">Edad</th>
                 <th scope="col">Acciones</th>
             </thead>
         
@@ -43,9 +43,9 @@
                     <th scope="row">{{p.id}} </th>
                     <td> {{p.nombre}} </td>
                     <td> {{p.apellido}} </td>
-                    <td> {{p.email}} </td>
+                    <td> {{p.parentesco}} </td>
                     <td> {{p.fecha_nacimiento}} </td>
-                    <td> {{p.altura}} m</td>
+                    <td> {{p.edad}} años</td>
                     {% url 'borrar' identificador=p.id as borrar_url %}
                     <td>{% bootstrap_button "Borrar" size="sm" button_class="btn-danger" button_type="link" href=borrar_url %}</td>
                 </tr>  
@@ -61,6 +61,6 @@
   
 <ul class="nav bg-dark fixed-bottom justify-content-center">
   <li class="nav-item">
-    <a class="nav-link active" href="/familia">coder house - python 36585 - {% now 'd-m-Y' %}</a>
+    <a class="nav-link active" href="/familia">DevelopersTeam - python Jimmy Ornay - {% now 'd-m-Y' %}</a>
   </li>
 </ul>
