@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='persona',
-            name='altura',
-            field=models.FloatField(default=0.0),
+            name='edad',
+            field=models.IntegerField(),
         ),
     ]
